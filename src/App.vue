@@ -1,18 +1,18 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <MenuComponent/>
-  <TablaMultiplicar/>
+  <router-view></router-view>
 </template>
 
 <script>
 
 import MenuComponent from './components/MenuComponent.vue'
-import TablaMultiplicar from './components/TablaMultiplicar.vue'
+
 
 export default {
   name: 'App',
   components: {
-     MenuComponent, TablaMultiplicar
+     MenuComponent
   }
 }
 </script>

@@ -3,10 +3,14 @@
         <h1>TABLA MULTIPLICAR</h1>
         <label>Introduzca un número: </label>
         <input type="number" v-model="numero"/><br/>
+        <br/>
         <button @click="tablaMultiplicar()">
             Mostrar
         </button>
-        <table>
+        <br/>
+        <br/>
+        
+        <table align="center">
             <thead>
                 <tr>
                     <th>Resultado</th>
@@ -31,12 +35,12 @@
         methods:{
              tablaMultiplicar(){
                 var html ="";
-                for (var i = 0; i < 10; i++){
+                for (var i = 1; i < 10; i++){
 
                         var resultado =  this.numero *  i;
                         
                         html += "<tr>";
-                        html += "<td>" + resultado +"</td>" ;
+                        html += "<td>" + this.numero + " * "+ i +" = "+ resultado +"</td>" ;
                         html += "</tr>";
 
                     }
